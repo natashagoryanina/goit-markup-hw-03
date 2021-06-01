@@ -22,12 +22,13 @@ background      #f5f4fa
 
   --projects-list-gap: 30px;
   --portfolio-card-border: 1px solid #eeeeee;
+  --main-text: Roboto, sans-serif;
 }
 
 .page {
   color: var(--text-color);
   background-color: var(--primary-white-color);
-  font-family: Roboto, sans-serif;
+  font-family: var(--main-text);
   letter-spacing: 0.03em;
 }
 
@@ -226,9 +227,6 @@ img {
 }
 
 .features-list .text {
-  /*margin-top: 0;
-  margin-bottom: 0;*/
-
   font-size: 14px;
   line-height: 1.7;
 }
@@ -321,8 +319,9 @@ img {
 }
 
 /* footer logo */
-.footer .logo {
-  margin-top: 60px;
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .foot-logo {
@@ -330,23 +329,30 @@ img {
 }
 
 .foot-address {
-  color: var(--primary-white-color);
   margin-top: 9px;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
 }
 
 .foot-contacts {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
 }
 
 .foot-contacts .link {
   display: block;
   margin-top: 9px;
+
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+
   text-decoration: none;
 }
 
@@ -359,14 +365,13 @@ img {
 /* Buttons */
 .buttons-list {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
 .buttons-list button {
   display: inline-block;
   min-width: 73px;
-  margin-bottom: 16px;
 
   font-weight: 500;
   font-size: 16px;
